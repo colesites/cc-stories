@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: block;
+    width: 100%;
+    min-height: 100vh;
+    background: white;
+}
+
+.side-bar {
+    position: fixed;
+    display: flex;
+    background: white;
+    width: 100%;
+    max-width: 350px;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    border-right: 5px solid rgb(27, 151, 196);
+    flex-direction: column;
+    z-index: 9;
+}
+
+.header {
+    display: flex;
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+    justify-content: center;
+    text-align: center;
+    font-size: 26px;
+    color: rgb(27, 151, 196);
+    background: transparent;
+    border-radius: 20px;
+    border: 2px solid rgb(27, 151, 196);
+}
+
+.link-group{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.link a{
+    color: rgb(27, 151, 196);
+    opacity: 0.5;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 10px;
+    margin: 20px;
+    line-height: 40px;
+    transition: .5s;
+    font-size: 20px;
+}
+
+.link a:hover, .link.active a{
+    opacity: 1;
+}
+
+.Valentines-section {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    min-height: 100vh;
+    margin-left: 350px;
+    align-items: flex-start;
+    padding: 60px 100px 100px;
+    color: rgb(27, 151, 196);
+    top: 0;
+    opacity: 0;
+    transition: 2s;
+}
+
+.Tree-Of-History-section {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    height: 100vh;
+    margin-left: 350px;
+    align-items: flex-start;
+    padding: 60px 100px 100px;
+    color: rgb(27, 151, 196);
+    top: 0;
+    opacity: 0;
+    transition: 2s;
+}
+
+.C-Force-section {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    height: 100vh;
+    margin-left: 350px;
+    align-items: flex-start;
+    padding: 60px 100px 100px;
+    color: rgb(27, 151, 196);
+    top: 0;
+    opacity: 0;
+    transition: 2s;
+}
+
+.Valentines-section.active, .Tree-Of-History-section.active, .C-Force-section.active {
+    position: relative;
+    opacity: 1;
+    z-index: 8;
+}
+
+.Valentines-section > h2, .Tree-Of-History-section > h2, .C-Force-section > h2{
+    margin-bottom: 20px;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 700;
+}
+
+p {
+    width: 700px;
+    margin-bottom: 20px;
+    line-height: 20px;
+    letter-spacing: 2px;
+}
+
+h3 {
+    margin-top: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(27, 151, 196);
+}
